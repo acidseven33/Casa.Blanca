@@ -1,0 +1,456 @@
+/* Estilo Geral do Corpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in;
+    color: white;
+    background: #000000;
+}
+
+.interface {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .btn-contato button, .hero-site button {
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: .5s;
+}
+
+/* Estilo do Header */
+header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    animation: slideDown 1s ease-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header .btn-contato button {
+    width: 140px;
+    height: 40px;
+}
+
+header .menu-desktop nav a:hover {
+    transform: scale(1.05);
+}
+
+header .btn-contato button:hover, .hero-site button:hover {
+    background-color: #f8a91f;
+    color: #000000;
+}
+
+/* Estilo do Hero */
+section.hero-site {
+    height: 90vh;
+    background-image: url(assets/Imagens.AP/WhatsApp\ Image\ 2023-11-24\ at\ 15.05.46\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.hero-site .interface {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span {
+    display: block;
+    font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero-site .txt-hero p span {
+    display: block;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+/* Informações centrais do Site */
+.main-content-1, .main-content-3 {
+    background-color: rgba(44, 44, 44, 0.8);
+    border-radius: 2%;
+    margin: 100px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.main-content-1 img, .main-content-3 img {
+    width: 40%;
+    height: auto;
+    animation: fadeIn 1s ease-in;
+    margin: 30px;
+}
+
+.main-content-1 .trip, .main-content-3 .trip {
+    order: 2;
+}
+
+.main-content-1 img, .main-content-3 img {
+    order: 1;
+}
+
+.main-content-2, .main-content-4 {
+    background-color: rgba(44, 44, 44, 0.8);
+    border-radius: 2%;
+    margin: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.main-content-2 img, .main-content-4 img {
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+.main-content-1 .trip, .main-content-4 .trip {
+    flex: 1;
+}
+
+/* Estilo da seção de contato */
+.contact-site {
+    padding: 60px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.contact-site .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-site .txt-contact h3 {
+    font-size: 2.5em;
+    color: #f8a91f;
+    margin-bottom: 20px;
+}
+
+.contact-site .txt-contact p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.contact-site .icons-contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-site .icons-contact button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-site .icons-contact button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.contact-site .flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.contact-site .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.contact-site .flip-card-inner:hover {
+    transform: rotateY(180deg);
+}
+
+.contact-site .flip-card-front,
+.contact-site .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-site .flip-card-front {
+    background-color: #f8a91f;
+    color: black;
+}
+
+.contact-site .flip-card-back {
+    background-color: #fff;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: larger;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 250px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h4 {
+    margin: 0;
+    font-size: small;
+}
+@media screen and (max-width: 981px) {
+    header .menu-desktop nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    header .menu-desktop nav ul li {
+        margin: 10px 0;
+    }
+
+    header .menu-desktop nav.active ul {
+        display: flex;
+    }
+
+    header .btn-contato button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 16px;
+    }
+
+    .hero-site button {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .main-content-1, .main-content-2, .main-content-3, .main-content-4 {
+        flex-direction: column;
+        margin: 50px 20px;
+        padding: 30px;
+    }
+
+    .main-content-1 img, .main-content-2 img, .main-content-3 img, .main-content-4 img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .contact-site .txt-contact h3 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .contact-site .icons-contact button {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content-1, .main-content-2, .main-content-3, .main-content-4 {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .main-content-1 img, .main-content-2 img, .main-content-3 img, .main-content-4 img {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .interface {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .btn-contato button {
+        margin-top: 10px;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 14px;
+    }
+
+    .hero-site button {
+        width: 160px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .main-content-1, .main-content-2, .main-content-3, .main-content-4 {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    .main-content-1 img, .main-content-2 img, .main-content-3 img, .main-content-4 img {
+        width: 100%;
+    }
+
+    .contact-site .txt-contact h3 {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+    .contact-site .icons-contact button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
